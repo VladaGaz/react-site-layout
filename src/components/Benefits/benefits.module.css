@@ -1,0 +1,57 @@
+.container {
+   font-family: Geometria;
+   font-style: normal;
+   padding: 66px 10px 0 10px;
+   width: calc(100% - 20px);
+}
+
+.box {
+   display: grid;
+}
+
+.item {
+   padding-bottom: 50px;
+}
+
+.title {
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 38px;
+   padding-bottom: 40px;
+}
+
+.header {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 25px;
+}
+
+.description {
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 21px;
+   color: rgba(0, 26, 51, 0.7);
+}
+
+@media (min-width: 481px) {
+   .container {
+      padding: 66px 40px 0 40px;
+      width: calc(100% - 20px - 80px);
+   }
+   .box {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-flow: column;
+   }
+}
+
+@media (min-width: 961px) {
+   .container {
+      padding: 66px 200px 0 200px;
+      width: calc(100% - 20px - 400px);
+   }
+   .box {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+}

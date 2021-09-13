@@ -1,0 +1,38 @@
+.container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.item {
+   display: grid;
+   align-items: center;
+   height: 100%;
+   padding: 12px;
+   cursor: pointer;
+   margin-right: 20px;
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.a {
+   text-decoration: none;
+   color: #001a33;
+}
+
+.a:visited {
+   color: #4169c1;
+}
+
+.a:hover {
+   color: #ffffff;
+}
+
+.item:hover {
+   background: #4169c1;
+}

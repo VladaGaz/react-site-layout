@@ -1,0 +1,25 @@
+.container {
+   display: flex;
+}
+
+.img {
+   padding-right: 8px;
+}
+
+.header {
+   font-family: Play;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.span {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.015em;
+   color: rgba(14, 14, 14, 0.61);
+}

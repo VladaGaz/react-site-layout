@@ -1,0 +1,52 @@
+.gallery {
+   position: relative;
+   display: grid;
+   grid-template-rows: repeat(2, max-content);
+   width: 100%;
+}
+
+.gallery::before {
+   cursor: pointer;
+   content: "";
+   position: absolute;
+   bottom: calc(-60px + -32px);
+   width: 30px;
+   height: 62px;
+   background: url("../../images/arrow.svg") no-repeat;
+   background-size: cover;
+   background-position: center;
+   transform: rotate(180deg);
+   opacity: 0.38;
+}
+
+.gallery::after {
+   cursor: pointer;
+   content: "";
+   position: absolute;
+   bottom: calc(-60px + -32px);
+   right: 0;
+   width: 30px;
+   height: 62px;
+   background: url("../../images/arrow.svg") no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+@media (min-width: 961px) {
+   .gallery {
+      width: max-content;
+      grid-template-rows: unset;
+      grid-template-columns: repeat(2, max-content);
+      align-items: center;
+   }
+
+   .gallery::before {
+      bottom: inherit;
+      left: calc(-30px + -45px);
+   }
+
+   .gallery::after {
+      bottom: inherit;
+      right: calc(-30px + -45px);
+   }
+}

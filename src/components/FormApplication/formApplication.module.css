@@ -1,0 +1,86 @@
+.form {
+   background: url("../../images/Rectangle153.png") 0 0/100% 100% no-repeat;
+   padding: 30px 30px 43px;
+   position: absolute;
+   /* top: 352px;*/
+   bottom: -120px;
+   left: 11px;
+   width: calc(100% - 60px - 22px);
+   height: 454px;
+   color: black;
+}
+
+.container {
+   display: grid;
+   align-content: space-evenly;
+}
+
+.text {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 25px;
+   text-align: left;
+}
+
+.a {
+   text-decoration: none;
+}
+.box {
+   display: grid;
+   align-content: center;
+   padding: 15px;
+}
+
+.label {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 18px;
+   color: #001a33;
+   text-align: left;
+}
+
+.input {
+   height: 45px;
+   border: 1px solid #e7ecf3;
+   box-sizing: border-box;
+   border-radius: 5px;
+}
+
+.input::placeholder {
+   color: rgba(16, 16, 16, 0.4);
+}
+
+@media (min-width: 481px) {
+   .form {
+      width: calc(100% - 60px - 22px - 80px);
+      height: 454px;
+      margin-left: 40px;
+      margin-right: 40px;
+   }
+}
+
+@media (min-width: 961px) {
+   .form {
+      width: calc(100% - 140px - 22px - 400px);
+      height: 202px;
+      padding: 35px 70px 0px;
+      margin-left: 200px;
+      margin-right: 200px;
+      bottom: -35px;
+   }
+   .container {
+      width: 100%;
+      padding-top: 25px;
+      align-items: center;
+      grid-auto-flow: column;
+      margin-left: -15px;
+   }
+
+   .buttons {
+      margin-top: 17px;
+   }
+}

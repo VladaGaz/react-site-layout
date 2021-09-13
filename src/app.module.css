@@ -1,0 +1,29 @@
+.tablet {
+   display: block;
+}
+
+@media (min-width: 961px) {
+   .tablet {
+      display: none;
+   }
+}
+
+.mobile {
+   display: none;
+}
+
+@media (min-width: 481px) {
+   .mobile {
+      display: inherit;
+   }
+}
+
+.desktop {
+   display: none;
+}
+
+@media (min-width: 961px) {
+   .desktop {
+      display: inherit;
+   }
+}

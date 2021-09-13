@@ -1,0 +1,76 @@
+.position {
+   position: relative;
+}
+
+.container {
+   width: calc(100% - 20px);
+   padding-top: 60px;
+   padding-bottom: 50px;
+   padding-left: 10px;
+   padding-right: 10px;
+   background: #4169c1;
+}
+
+.title {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 38px;
+   color: #ffffff;
+   padding-bottom: 25px;
+}
+
+.box {
+   display: flex;
+   align-items: baseline;
+   padding-bottom: 15px;
+}
+
+.name {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 23px;
+   color: #ffffff;
+   padding-right: 20px;
+}
+
+.information {
+   width: 156px;
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   color: #ffffff;
+   opacity: 0.7;
+}
+
+.img {
+   padding-right: 25px;
+}
+
+@media (min-width: 481px) {
+   .container {
+      height: 505px;
+      width: calc(100% - 60px);
+      padding-left: 40px;
+      padding-right: 20px;
+   }
+}
+
+@media (min-width: 961px) {
+   .container {
+      width: calc(100% - 400px);
+      height: 445px;
+      padding-top: 60px;
+      padding-bottom: 0px;
+      padding-left: 200px;
+      padding-right: 200px;
+   }
+   .position {
+      width: 100%;
+   }
+}

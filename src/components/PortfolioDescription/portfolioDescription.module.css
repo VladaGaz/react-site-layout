@@ -1,0 +1,79 @@
+.container {
+   background: #4169c1;
+   color: #ffffff;
+   font-family: Geometria;
+   padding: 30px;
+   width: calc(100% - 60px);
+}
+
+.title {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 25px;
+   padding-bottom: 12px;
+}
+
+.description {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 25px;
+   color: rgba(255, 255, 255, 0.7);
+   padding-bottom: 20px;
+}
+
+.header {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 20px;
+   padding-bottom: 20px;
+}
+
+.ul {
+   margin: 0px;
+   padding: 0px;
+}
+.li {
+   list-style-type: none;
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   padding-bottom: 13px;
+}
+
+.span {
+   display: flex;
+   align-items: baseline;
+}
+
+.li {
+   padding-left: 8px;
+}
+
+.button {
+   width: 100%;
+}
+
+@media (min-width: 481px) {
+   .ul {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+   }
+
+   .button {
+      width: 410px;
+   }
+}
+
+@media (min-width: 961px) {
+   .container {
+      width: calc(100% - 120px);
+      padding: 40px 30px 80px 30px;
+   }
+}

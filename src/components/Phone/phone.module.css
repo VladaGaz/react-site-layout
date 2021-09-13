@@ -1,0 +1,16 @@
+.container {
+   display: flex;
+   align-items: center;
+}
+
+.img {
+   padding-right: 10px;
+}
+
+.span {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 28px;
+}

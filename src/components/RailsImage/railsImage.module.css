@@ -1,0 +1,17 @@
+.img {
+   height: 250px;
+   width: 100%;
+}
+
+@media (min-width: 481px) {
+   .img {
+      height: 390px;
+   }
+}
+
+@media (min-width: 961px) {
+   .img {
+      height: 441px;
+      max-width: 790px;
+   }
+}

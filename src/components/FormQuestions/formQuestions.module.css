@@ -1,0 +1,143 @@
+.form {
+   padding: 30px 30px 43px;
+   width: calc(100% - 60px);
+   height: 600px;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   background: white;
+}
+
+.container {
+   display: grid;
+   align-content: space-evenly;
+}
+
+.text {
+   width: 235px;
+   height: 28px;
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 28px;
+}
+
+.box {
+   display: grid;
+   align-content: center;
+   padding: 10px;
+}
+
+.label {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 18px;
+   color: #001a33;
+}
+
+.confidentiality {
+   font-family: Geometria;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   color: rgba(16, 16, 16, 0.4);
+   padding-top: 10px;
+}
+
+.confidentialityBox {
+   flex-basis: 50%;
+}
+
+.a {
+   color: black;
+}
+
+.input {
+   height: 45px;
+   border: 1px solid #e7ecf3;
+   box-sizing: border-box;
+   border-radius: 5px;
+   background: #eef2f9;
+}
+
+.comment {
+   height: 143px;
+   border: 1px solid #e7ecf3;
+   box-sizing: border-box;
+   border-radius: 5px;
+   background: #eef2f9;
+}
+
+.comment::placeholder {
+   position: absolute;
+}
+
+.checkbox {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+}
+
+.checkbox + label {
+   display: inline-flex;
+   align-items: center;
+   user-select: none;
+}
+.checkbox + label::before {
+   content: "";
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   flex-shrink: 0;
+   flex-grow: 0;
+   border: 5px solid #4169c1;
+   border-radius: 0.25em;
+   margin-right: 0.5em;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 50% 50%;
+   background-color: #4169c1;
+   border-color: #eef2f9;
+}
+
+.button {
+   width: 100%;
+}
+
+@media (min-width: 481px) {
+   .form {
+      width: calc(100% - 400px);
+      position: absolute;
+      top: 38px;
+      left: 320px;
+      height: 592px;
+   }
+   .button {
+      max-width: 278px;
+   }
+}
+
+@media (min-width: 961px) {
+   .form {
+      width: calc(100% - 400px - 607px);
+      position: absolute;
+      top: -34px;
+      left: 607px;
+      height: 419px;
+   }
+   .container {
+      grid-auto-flow: column;
+      align-items: start;
+   }
+   .grid {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+   }
+   .comment {
+      height: 210px;
+   }
+}
